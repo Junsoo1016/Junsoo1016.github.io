@@ -1,0 +1,165 @@
+body {
+    margin: 25px 100px;
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+h1{
+    text-align: left;
+    font-size: 34px;
+    font-weight: 800px;
+    color:rgb(70, 70, 70);
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px;
+    width: 700px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgb(70, 70, 70);
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 500px;
+    text-align: left;
+    line-height: 36px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+.navbar__logo {
+    font-size: 28px;
+    font-family: 'roboto';
+    font-weight: 900;
+    color: rgb(255, 180, 87);
+    
+}
+.navbar__logo a {
+    color: rgb(255, 180, 87);
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0 
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+    color: red;
+    background-color: rgb(255, 180, 87);
+    border-radius: 4px;
+}
+.navbar__menu a:hover {
+    color: red;
+}
+
+.navbar__icons {
+    list-style: none;
+    color: grey;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: rgb(255, 180, 87);
+}
+
+main {
+    font-family: 'roboto';
+    font-size: 12px;
+    margin: 150px 0px 0px 100px;
+}
+
+.small-button {
+    border-radius: 3px;
+    padding: 12px 24px;
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+    color: #fff;
+    background-color: #f31e1e;
+    border-color: #f31e1e;
+    margin: 50px 0;
+}
+
+#myPhoto {
+    right: 100px;
+    margin: 50px auto;
+}
+
+.intro {
+    color: red;
+}
+.experience {
+    position: absolute;
+    top: 840px;
+    left: 800px;
+    width: 200px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar__menu li {
+        text-align: center;
+    }
+    .navbar__menu li:hover {
+        width: 100%
+    }
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%
+    }
+    main {
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar__toogleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+}
