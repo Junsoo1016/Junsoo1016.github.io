@@ -1,8 +1,8 @@
 body {
-    margin: 25px 100px;
+    margin: 5px 15px;
     font-family: 'roboto';
     font-size: 16px;
-}
+}   
 
 a{
     text-decoration: none;
@@ -25,6 +25,12 @@ h2 {
     color: rgb(70, 70, 70);
 }
 
+h5 {
+    font-weight: 200;
+    text-align: center;
+    padding: 0;
+}
+
 p{
     font-size: 20px;
     font-weight: 400;
@@ -42,10 +48,11 @@ p{
 }
 
 .navbar__logo {
-    font-size: 28px;
+    font-size: 26px;
     font-family: 'roboto';
     font-weight: 900;
     color: rgb(255, 180, 87);
+    padding: 0;
     
 }
 .navbar__logo a {
@@ -53,7 +60,9 @@ p{
 }
 
 .navbar__menu {
-    display: flex;
+    display: none;
+    position: fixed;
+    right: 65px;
     list-style: none;
     padding-left: 0 
 }
@@ -71,29 +80,46 @@ p{
     color: red;
 }
 
-.navbar__icons {
-    list-style: none;
-    color: grey;
-    display: flex;
-    padding-left: 0;
-}
 
-.navbar__icons li {
-    padding: 8px 12px;
-}
 
 .navbar__toogleBtn {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 24px;
+   
+    padding: 0;
+    font-size: 26px;
     color: rgb(255, 180, 87);
 }
+
+.navbar__cancelBtn {
+    display: none;
+    font-size: 26px;
+    color: rgb(255, 180, 87);
+}
+
 
 main {
     font-family: 'roboto';
     font-size: 12px;
     margin: 150px 0px 0px 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+}
+
+.navbar__icons {
+    list-style: none;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+
+.navbar__icons li{
+    padding: 8px 12px;
 }
 
 .small-button {
@@ -119,19 +145,30 @@ main {
 }
 .experience {
     position: absolute;
-    top: 840px;
+    top: 780px;
     left: 800px;
     width: 200px;
 }
 
 
+
+.navbar__menu.active {
+        display: flex;
+    }
+
 @media screen and (max-width: 768px) {
+    body {
+        margin: 10px 0px;
+    }
+    
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 24px;
+        
     }
     .navbar__menu {
+        position: static;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -139,12 +176,14 @@ main {
     }
     .navbar__menu li {
         text-align: center;
+        justify-content: center;
     }
     .navbar__menu li:hover {
         width: 100%
     }
+
     .navbar__icons {
-        display: none;
+        display: flex;
         justify-content: center;
         width: 100%
     }
@@ -155,11 +194,12 @@ main {
     }
 
     .navbar__toogleBtn {
-        display: block;
+        position: fixed;
+        right: 15px;
     }
 
     .navbar__menu.active,
     .navbar__icons.active {
-        display: flex;
+        display: flex;    
     }
 }
