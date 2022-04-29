@@ -106,7 +106,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 10px;
+    top: 100px;
     width: 100%;
 }
 
@@ -123,15 +123,15 @@ footer {
 }
 
 .small-button {
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 12px 24px;
     font-family: 'roboto';
     font-size: 18px;
     font-weight: 500;
     text-transform: none;
     color: #fff;
-    background-color: #f31e1e;
-    border-color: #f31e1e;
+    background-color: rgb(98, 166, 227);
+    border-color: rgb(75, 130, 178);
     margin: 50px 0;
 }
 
@@ -165,11 +165,6 @@ input, span {
     border-bottom: 2px solid black
     width: 400px;
 }
-
-#aaa {
-    color:aqua
-}
-
 
 
 .navbar__menu.active {

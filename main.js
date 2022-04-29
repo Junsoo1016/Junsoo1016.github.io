@@ -9,7 +9,7 @@ toggleBtn.addEventListener('click', () => {
 
 new TypeIt('#first', {
     startDelay: 400,
-    strings: 'Junsoo Park',
+    strings: "'Junsoo Park',",
     afterComplete: () => {
       new TypeIt('#second', {
         startDelay: 400,
