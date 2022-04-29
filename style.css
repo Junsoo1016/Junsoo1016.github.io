@@ -56,7 +56,7 @@ p{
     
 }
 .navbar__logo a {
-    color: rgb(255, 180, 87);
+    color: #62A6E3
 }
 
 .navbar__menu {
@@ -73,11 +73,11 @@ p{
 
 .navbar__menu li:hover {
     color: red;
-    background-color: rgb(255, 180, 87);
+    background-color: rgb(98, 166, 227);
     border-radius: 4px;
 }
 .navbar__menu a:hover {
-    color: red;
+    color: #FB9F6C
 }
 
 
@@ -86,13 +86,13 @@ p{
    
     padding: 0;
     font-size: 26px;
-    color: rgb(255, 180, 87);
+    color: rgb(104, 104, 104);
 }
 
 .navbar__cancelBtn {
     display: none;
     font-size: 26px;
-    color: rgb(255, 180, 87);
+    color: rgb(104, 104, 104);
 }
 
 
@@ -141,7 +141,7 @@ footer {
 }
 
 .intro {
-    color: red;
+    color: #78FA92
 }
 .experience {
     position: absolute;
@@ -149,6 +149,28 @@ footer {
     left: 800px;
     width: 200px;
 }
+
+#messageBox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+input, span {
+    display: inline-block;
+    font-size: 34px;
+    border: 1;
+    border-bottom: 2px solid black
+    width: 400px;
+}
+
+#aaa {
+    color:aqua
+}
+
+
 
 .navbar__menu.active {
         display: flex;
@@ -186,9 +208,15 @@ footer {
         width: 100%
     }
     main {
-        text-align: center;
-        width: 100%;
-        position: relative;
+        margin: 100px 0px 0px 75px
+    }
+
+    h1, span {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 24px
     }
 
     .navbar__toogleBtn {
